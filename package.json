@@ -1,0 +1,24 @@
+{
+  "name": "npm-test",
+  "version": "1.0.0",
+  "description": "This project is based on my initial learning day in programing. there i am also checking my learning skills to make a media platforms for _!!.",
+  "main": "testingnpminit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./views/input.css -o ./public/output.css --watch",
+    "start": "nodemon app.js"
+  },
+  "author": "Nishant",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "nodemon": "^3.1.10",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}

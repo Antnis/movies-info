@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--STYLE-->
+    <link href="/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+ <body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="sidebar-above-div max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+
+      <!-- Sidebar Button -->
+      <div class="sidebar side-btn text-2xl text-gray-700 hover:text-blue-600 transition" id="sidebar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="center w-full max-w-md ml-4">
+        <form id="submitForm" action="/submit" method="post" class="flex items-center bg-gray-100 border border-gray-300 rounded-lg overflow-hidden shadow-sm focus-within:ring ring-blue-200">
+          <input
+            type="text"
+            id="search-input"
+            name="moviename"
+            placeholder="Search movies..."
+            class="flex-1 px-4 py-2 bg-transparent focus:outline-none"
+          />
+          <button type="submit" class="bg-blue-600 text-white px-4 py-2 hover:bg-blue-700 transition">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-6 px-4">
+    <div class="main-content grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6" id="main-first-el">
+
+      <!-- Each Movie Card -->
+      <div class="content bg-white rounded-xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+        <div class="img-div">
+          <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg" alt="movieimage" class="w-full h-60 object-cover" />
+        </div>
+        <a href="#" class="block text-center font-medium text-white bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 py-2 transition">Click here for download</a>
+      </div>
+
+      <!-- You would copy this same 'content' block for each movie item -->
+      <!-- Just change the image src and alt as needed -->
+
+    </div>
+
+    <script src="/mainjs.js"></script>
+  </main>
+</body>
+</html>
