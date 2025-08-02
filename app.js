@@ -25,7 +25,7 @@ app.use((req,res,next)=>{
 })
 
 
-const Port = 3010;
+const Port = process.env.PORT || 3010;
 app.listen(Port,()=>{
   console.log(`server address http://localhost:${Port}`);
 })
