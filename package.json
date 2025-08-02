@@ -2,7 +2,7 @@
   "name": "npm-test",
   "version": "1.0.0",
   "description": "This project is based on my initial learning day in programing. there i am also checking my learning skills to make a media platforms for _!!.",
-  "main": "testingnpminit.js",
+ "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind": "npx tailwindcss -i ./views/input.css -o ./public/output.css --watch",
