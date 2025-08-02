@@ -20,9 +20,9 @@ app.set('views','views');
 
 app.use(hostRouter);
 app.use(movieReqRouter);
-app.use((req,res,next)=>{
- res.render('mainpage');
-})
+app.use((req, res) => {
+  res.status(404).render('404');
+});
 
 
 const Port = process.env.PORT || 3010;
