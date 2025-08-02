@@ -25,7 +25,7 @@ movieReqRouter.post("/submit", (req, res, next) => {
     const urlapi = `http://www.omdbapi.com/?t=${encodeURIComponent(
       movieName
     )}&plot=full&apikey=1d5c68d3`;
-    fetch(urlapi)
+    const fetch = require('node-fetch');
       .then((response) => response.json())
       .then((data) => {
         const filePath = path.join(rootDir, "data", "index.json");
