@@ -6,9 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind": "npx tailwindcss -i ./views/input.css -o ./public/output.css --watch",
-    "start": "node app.js",
-    "tailwind:dev": "npx tailwindcss -i ./views/input.css -o ./public/output.css --watch",
-    "build:tailwind": "npx tailwindcss -i ./views/input.css -o ./public/output.css"
+    "start": "nodemon app.js"
   },
   "author": "Nishant",
   "license": "ISC",
